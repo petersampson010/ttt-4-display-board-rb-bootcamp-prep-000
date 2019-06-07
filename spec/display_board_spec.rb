@@ -191,7 +191,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # *** Comment the line below by adding a # at the line start ***
       board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
       
-      
+      output = capture_puts{ display_board(board) }
       rows = output.split("\n")
       
       expect(rows[0]).to eq(" O | O | O ")
